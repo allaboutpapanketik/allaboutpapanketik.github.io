@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#particles-js {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(252, 252, 252);
+    border-radius: 100px;
+  }
+
+body {
+    font-family: 'Viga', sans-serif;
+    background: url(../img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.kuis h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0 auto 2rem;
+  }
+
+
+#score {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+.kuis #question {
+    font-size: 17px;
+    color: #292b2e;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    min-height: 30%;
+    padding: 2px;
+    text-align: center;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+    background-color: white;
+    width: 40%;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #363535;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+
+#btn0:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+    cursor: pointer;
+    background-color:#292b2e;
+    color: white;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #292b2e;
+    font-size: 18px;
+}
+
+.warning {
+    background-color: #292b2e;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black; 
+}
+
+.peraturan {
+    font-size: 14px;
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0;
+    position: sticky;
+    
+}
+
+.cpyrt {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .heading {
+        font-size: 1.6rem;
+        padding-top: 10px;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    #btn0, #btn1, #btn2, #btn3 {
+        background-color: white;
+        width: 40%;
+        font-size: 13px;
+        color: black;
+        border: 1px solid #363535;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding: 10px 10px;
+    }
+
+    .peraturan {
+        font-size: 16px;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+
+    .cpyrt {
+        font-size: 15px;
+        
+    }
+
+}
+
+
+
+@media (max-width: 576px) { 
+
+    .container {
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 1.75rem;
+        padding-top: 10px;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+    }
+
+
+    .kuis #question {
+        font-size: 1rem;
+        color: #292b2e;
+        text-align: justify;
+        margin-bottom: -10px;
+    }
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+    background-color: white;
+    width: 50%;
+    font-size: 13px;
+    color: black;
+    border: 1px solid #363535;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+    #progres {
+        font-size: 20px;
+    }
+
+    .peraturan {
+        font-size: 15px;
+    }
+
+    footer {
+        padding-bottom: 0;
+        padding-top: 20px;
+
+    }
+
+    .cpyrt {
+        font-size: 17px;
+    }
+
+    }

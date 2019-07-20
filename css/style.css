@@ -1,0 +1,688 @@
+* {
+  outline: none !important;
+}
+
+
+body {
+  font-family: "Viga", sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 1000000;
+}
+
+hr.light {
+  border: 2px solid #d5d5d5;
+  border-radius: 2px;
+  width: 55%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+.navbar-light .navbar-toggler {
+  background: white;
+}
+
+.navbar {
+  transition: 0.5s;
+  background: transparent !important;
+}
+
+.navbar img {
+  width: 50px !important;
+  padding-bottom: 5px;
+}
+
+.navbar.scrolled {
+  background: black !important;
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+  
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(252, 252, 252);
+  border-radius: 100px;
+}
+
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/photo-1541029318873-862bbc51a6de.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px white;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+  pointer-events: none;
+}
+
+.banner:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, #000, transparent);
+  pointer-events: none;
+}
+
+.about {
+  background-color: black;
+  height: 640px !important;
+  padding-top: 10px
+}
+
+.about h2 {
+  margin-top: 200px;
+  font-size: 25px;
+}
+
+.about p {
+  font-size: 16px;
+  text-align: justify;
+  color: white;
+}
+
+.about hr {
+  border-bottom: 4px solid white;
+  width: 9%;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+.narrow h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+}
+
+.narrow p {
+  color: white;
+  text-align: center !important;
+}
+
+.fitur {
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+  background: url(../img/kiyah-mitchell-QwDkKlN9Pbk-unsplash.jpg);
+  background-size: cover;
+  padding-bottom: 90px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fitur:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+  pointer-events: none;
+}
+
+.fitur:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, #000, transparent);
+  pointer-events: none;
+}
+
+h3.text-white {
+  font-size: 1.6rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  margin: 0 auto 2rem;
+}
+
+.fa-pencil-square-o {
+  color: white;
+  font-size: 2.8em;
+  padding-bottom: 16px;
+}
+
+.fa-gamepad {
+  color: white;
+  font-size: 2.8em;
+  padding-bottom: 16px;
+}
+
+.fa-history {
+  color: white;
+  font-size: 2.8em;
+  padding-bottom: 16px;
+}
+
+.height100p {
+  height: 100vh;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.contentBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+  color: rgba(255, 255, 255, 1);
+}
+
+.sec1 {
+  padding: 95px 0;
+  background: black;
+}
+
+.heading-text h2 {
+  font-size: 2.4rem;
+}
+
+
+
+.sci {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+  margin-right: 8px;
+  margin-left: 13px;
+}
+
+.sci li a {
+  color: #777;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  color: #fff;
+}
+
+footer {
+  background: black;
+  padding: 50px 0 0;
+}
+
+.cpyrt {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin: 20px;
+}
+
+.cpyrt a,
+.cpyrt a:hover {
+  color: #fff;
+}
+
+.clients {
+  padding-bottom: 35px;
+}
+
+.clients img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+blockquote {
+  color: white;
+  margin: 1rem;
+}
+
+.heading {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.test {
+  padding: 20px;
+  position: relative;
+  background: black;
+  background-size: cover;
+  color: white;
+  padding-top: 50px;
+}
+
+.fa-facebook:hover {
+  color: white;
+}
+
+.fa-twitter:hover {
+  color: white;
+}
+
+.fa-instagram:hover {
+  color: white;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #E1306C;
+}
+
+.showcase {
+  background: black;
+  color: white;
+  padding-top: ;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  height: 20rem;
+  background-size: cover;
+}
+
+.lead {
+  padding-bottom: 20px;
+}
+
+.kuis {
+  padding: 80px;
+  background: black;
+  background-size: cover;
+  position: relative;
+}
+
+.workingspace {
+  text-align: left;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+}
+
+.workingspace h3 {
+  font-size: 46px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: white;
+  margin: 35px 0;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+  margin-top: 14px;
+}
+
+.workingspace img {
+  box-shadow: 0px 0px 20px white;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  width: 30%;
+  background-color: white !important;
+  color: black;
+  border: none !important;
+  box-shadow: #fff;
+  box-shadow: 0px 0px 10px white;
+}
+
+.tombol:hover {
+  background-color: black !important;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid  white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .workingspace {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    width: 45%;
+  }
+
+  .cpyrt {
+    font-size: 1.3rem;
+  }
+
+  .contentBox h1 {
+    font-size: 40px;
+  }
+
+  .clients img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .navbar-light .navbar-brand,
+  .navbar-light .navbar-brand:hover,
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .clients img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contentBox {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+
+  .contentBox h1 {
+    font-size: 1.7rem;
+  }
+
+  .contentBox p {
+    font-size: 1rem;
+  }
+
+  .about p {
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+  }
+
+  .narrow h1 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+
+  .fa-pencil-square-o {
+    color: white;
+    font-size: 2.6em;
+    padding-bottom: 16px;
+  }
+
+  .narrow p {
+    color: white;
+    text-align: center !important;
+    font-size: 16px;
+  }
+
+  h3.text-white {
+    font-size: 1.2rem;
+  }
+
+  .showcase .showcase-img {
+    height: 15rem;
+    background-size: cover;
+  }
+
+  .h2,
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .lead {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    width: 38%;
+  }
+
+  .workingspace img {
+    box-shadow: 0px 0px 20px white;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .workingspace h3 {
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    margin: 35px 0;
+  }
+
+  .workingspace p {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    margin-top: 25px;
+  }
+
+  .clients img {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  blockquote {
+    color: white;
+    margin: 1rem;
+    font-size: 15px;
+  }
+
+  .cpyrt {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .banner {
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+
+  .about {
+    background-color: black;
+    height: 580px !important;
+  }
+
+  .about p {
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+    padding: 20px;
+  }
+
+  .about h2 {
+    margin-top: 210px;
+    font-size: 25px;
+  }
+
+  .contentBox h1 {
+    font-size: 30px;
+  }
+
+  .narrow p {
+    color: white;
+    text-align: center !important;
+    font-size: 16px;
+  }
+
+  .lead {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .clients img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .workingspace img {
+    box-shadow: 0px 0px 20px white;
+    border-radius: 10px;
+    width: 150%;
+    margin-top: 30px;
+  }
+
+  .workingspace h3 {
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    margin: 35px 0;
+  }
+
+  .workingspace p {
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    margin-top: 25px;
+}
+
+  .test {
+    padding-top: 90px;
+    position: relative;
+    background: black;
+    background-size: cover;
+    color: white;
+  }
+
+  .cpyrt {
+    font-size: 1rem;
+  }
+}

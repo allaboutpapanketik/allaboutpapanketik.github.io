@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/testimoni.css" />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="icon/gamepad.png" type="image/x-icon">
+
+    <title>Permainan Mengetik Cepat</title>
+  </head>
+  <body class="gradient">
+
+    <div id="particles-js"></div>
+    <header class="text-white text-center p-3">
+      <h1 class="heading">Permainan Mengetik Cepat</h1>
+      <div class="heading-underline"></div>
+    </header>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">
+            Ketiklah secara benar dan tepat kata yang ada dibawah ini dalam waktu hitungan mundur dalam
+            <span class="text-success" id="seconds">5</span> detik:
+          </p>
+          <h2 class="display-2 mb-4" id="current-word">Test</h2>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Mulai Mengetik..."
+            id="word-input"
+            autofocus
+          />
+
+          <h4 class="mt-3 pesan" id="message"></h4>
+          <span class="fa-stack fa-2x" id="startGameBtn">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-play fa-stack-1x"></i>
+          </span>
+          <span class="fa-stack fa-2x d-none" id="stopGameBtn">
+            <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+            <i class="fas fa-stop fa-stack-1x"></i>
+          </span>
+          <ul class="sci fa-2x">
+            <li>
+              <h3>
+                Waktu:
+                <span id="time">0</span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                Skor:
+                <span id="score">0</span>
+              </h3>
+            </li>
+          </ul>
+          <h3 class="terbaik">
+            Skor Terbaik:
+            <span id="bestScore">0</span>
+          </h3>
+        </div>
+
+        <div class="col-md-6">
+          <h1 class="text-left">Peraturan Permainan :</h1>
+          <p class="history">
+            Dalam Permainan ini terdapat tiga level yaitu easy, medium, dan hard. setiap level memiliki waktu yang berbeda-beda.
+          </p>
+          <br />
+          <p class="history">
+            Untuk melihat riwayat permainan dan pilihan level bisa klik tombol
+            yang ada di bawah ini:
+          </p>
+          <ul class="scii">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary findoutmore tombol"
+                data-toggle="modal"
+                data-target="#yourScoresModal"
+              >
+                History
+              </button>
+            </li>
+            <li>
+              <select id="chooseLevel" class="form-control findoutmore tombol">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="bestScoreModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h3 class="modal-title text-center text-dark" id="exampleModalLabel">
+              Skor Tertinggi Terbaru
+            </h3>
+          </div>
+          <div class="modal-body text-dark text-center" id="bestScoreModalBody">
+            <p class="text-dark">Selamat Anda Memiliki Skor Tertinggi Terbaru</p>
+            <em id="bestscoreEm"></em>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger findoutmore" data-dismiss="modal">
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="yourScoresModal"
+      tabindex=""
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h3 class="modal-title text-dark" id="exampleModalLabel">
+              Riwayat Permainan
+            </h3>
+          </div>
+          <div class="modal-body text-dark">
+            <table class="table table-bordered text-center">
+              <thead>
+                <th>Permainan</th>
+                <th>Skor</th>
+              </thead>
+              <tbody id="yourScoresTbody"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger findoutmore" data-dismiss="modal">
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="cpyrt">© Copyright 2019 | Design By Anas Setiawan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js "></script>
+
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/appp.js"></script>
+
+  </body>
+</html>
